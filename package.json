@@ -1,0 +1,29 @@
+{
+  "name": "case-format-converter",
+  "version": "1.0.0",
+  "description": "npm package to change word format",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkshayWay/npm-word-format-converter.git"
+  },
+  "keywords": [
+    "[npm",
+    "word",
+    "converter",
+    "format",
+    "converter",
+    "word",
+    "format",
+    "converter]"
+  ],
+  "author": "Akshay Wayangankar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkshayWay/npm-word-format-converter/issues"
+  },
+  "homepage": "https://github.com/AkshayWay/npm-word-format-converter#readme"
+}
