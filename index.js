@@ -6,6 +6,14 @@ function toCamelCase(str) {
         .replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase());
 }
 
+function toPascalCase(str) {
+  return (str == "") | (str == undefined)
+    ? ""
+    : str
+        .toLowerCase()
+        .replace(/(?:^|[^a-zA-Z0-9]+)(.)/g, (match, chr) => chr.toUpperCase());
+}
+
 function toSnakeCase(str) {
   return (str == "") | (str == undefined)
     ? ""
@@ -13,6 +21,15 @@ function toSnakeCase(str) {
         .replace(/\s+/g, "_") // Replace spaces with underscores
         .replace(/[^\w\s]/gi, "") // Remove special characters
         .toLowerCase(); // Convert to lowercase
+}
+
+function toScreamingSnakeCase(str) {
+  return (str == "") | (str == undefined)
+    ? ""
+    : str
+        .replace(/\s+/g, "_") // Replace spaces with underscores
+        .replace(/[^\w\s]/gi, "") // Remove special characters
+        .toUpperCase(); // Convert to lowercase
 }
 
 function toKebabCase(str) {
@@ -53,4 +70,6 @@ module.exports = {
   kebabCase: toKebabCase,
   trainCase: toTrainCase,
   titleCase: toTitleCase,
+  pascalCase: toPascalCase,
+  screamingSnakeCase: toScreamingSnakeCase,
 };
