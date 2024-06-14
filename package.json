@@ -15,13 +15,19 @@
     "word",
     "converter",
     "format",
-    "converter",
-    "word",
-    "format",
-    "converter]"
+    "change-case",
+    "word-case",
+    "camel-case",
+    "pascal-case",
+    "snake-case",
+    "kebab-case",
+    "train-case",
+    "title-Case",
+    "pascal-case",
+    "screaming-snake-case"
   ],
   "author": "Akshay Wayangankar",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/AkshayWay/npm-word-format-converter/issues"
   },
